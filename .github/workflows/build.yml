@@ -113,21 +113,21 @@ jobs:
 
     - name: Upload build artifacts - Linux
       if: matrix.os == 'ubuntu-latest'
-      uses: actions/upload-artifact@v4
+      uses: actions/upload-artifact@v5
       with:
         name: go-wails-rect-linux
         path: build/bin/go-wails-react
 
     - name: Upload build artifacts - Windows
       if: matrix.os == 'windows-latest'
-      uses: actions/upload-artifact@v4
+      uses: actions/upload-artifact@v5
       with:
         name: go-wails-rect-windows
         path: build/bin/go-wails-react.exe
 
     - name: Upload build artifacts - macOS
       if: matrix.os == 'macos-latest'
-      uses: actions/upload-artifact@v4
+      uses: actions/upload-artifact@v5
       with:
         name: go-wails-rect-macos
         path: build/bin/go-wails-react.app
